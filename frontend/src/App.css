@@ -1,0 +1,156 @@
+* {
+  text-align: center;
+  padding: 0;
+  margin:0;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bolder;
+}
+body {
+  background-color:rgb(8, 20, 29);
+  height: 100%;
+}
+.find-button{
+  --color: #ffa260;
+  --hover: #e5ff60;
+  background:none;
+  border: 2px solid #ffa260;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  color: white;
+}
+.find-button:hover,
+.find-button:focus { 
+  
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+.group-card-imgs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.card{
+  margin: 10px;
+  width: 250px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+} 
+.card h3,p {
+  padding: 5px
+}
+.group-img {
+max-width: 180px;
+max-height: 250px;
+} 
+
+.boys {
+  max-width: 200px;
+  max-height: 250px;
+}
+.wallpaper{
+  max-height: 500px;
+  width: 1250px;
+}
+h2 {
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 30px;
+}
+.form{
+  display: flex;
+  flex-wrap: wrap;
+}
+.signup-login{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 6rem;
+  margin-right: 7.7rem;
+}
+.button{
+color: black;
+box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 10px;
+  padding: .7em 1.2em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.button {
+  border-color: #e74c3c;
+  border-radius: 0;
+  color: #e74c3c;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 150ms ease-in-out;
+}
+.button:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #e74c3c;
+  z-index: -1;
+  transition: width 150ms ease-in-out;
+}
+.button:hover {
+  color: #fff;
+}
+.button:hover:after {
+  width: 110%;
+}
+
+.button:hover, .button:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.inputs{
+margin: 8px;
+margin-right: 2px;
+color: black
+}
+
+.address{
+  font-weight: bolder;
+  font-size: 24px;
+}
